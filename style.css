@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --gold: #c9a86a;
+    --ink: #3a2a26;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--gold);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Figtree", sans-serif;
+    color: var(--ink);
+}
+
+.box-sizing {
+    width: 512px;
+    min-height: 600px;
+    border: 3px solid var(--ink);
+    border-radius: 50px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #975a3e;
+}
+
+h1 {
+    color: var(--ink);
+    margin-bottom: 60px;
+}
+
+.box-sizing p {
+    width: 300px;
+    margin-bottom: 10px;
+    color: var(--ink);
+    font-size: 18px;
+}
+
+.write {
+    width: 300px;
+    height: 55px;
+    margin-bottom: 30px;
+    padding: 0 15px;
+    background-color: var(--gold);
+    color: var(--ink);
+    border: 3px solid var(--ink);
+    border-radius: 15px;
+    font-family: "Figtree", sans-serif;
+    font-size: 16px;
+}
+
+.write::placeholder {
+    color: var(--ink);
+}
+
+button {
+    width: 300px;
+    height: 55px;
+    margin-top: 30px;
+    background-color: var(--gold);
+    color: var(--ink);
+    border: 3px solid var(--ink);
+    border-radius: 15px;
+    font-family: "Figtree", sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background-color: var(--ink);
+    color: var(--gold);
+}
