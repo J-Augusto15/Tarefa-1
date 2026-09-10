@@ -1,83 +1,167 @@
-@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --gold: #c9a86a;
-    --ink: #3a2a26;
+    --Blue: rgb(13, 104, 165);
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    font-family: "Roboto";
+    margin: 0 0;
 }
 
 body {
-    background-color: var(--gold);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    font-family: "Figtree", sans-serif;
-    color: var(--ink);
+    background-color: black;
+    color: aliceblue;
+    height: 300vh;
 }
 
-.box-sizing {
-    width: 512px;
-    min-height: 600px;
-    border: 3px solid var(--ink);
-    border-radius: 50px;
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #975a3e;
+html {
+    scroll-behavior: smooth;
 }
+
+
+.navbar {
+    background-color: var(--Blue);
+    height: 64px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000
+}
+
+.joao {
+    margin-left: 512px;
+    margin-top: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    transition: transform 0.8s;
+}
+
+.joao:hover {
+    transform: scale(1.1);
+}
+.joao2{
+    margin-left: 64px;
+    margin-top: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    transition: transform 0.8s;
+}
+.joao2:hover {
+    transform: scale(1.1);
+}
+
 
 h1 {
-    color: var(--ink);
-    margin-bottom: 60px;
+    font-size: 64px;
+    margin-top: 4rem;
+    margin-left: 2rem;
+    position: relative;
 }
 
-.box-sizing p {
-    width: 300px;
-    margin-bottom: 10px;
-    color: var(--ink);
-    font-size: 18px;
+h2 {
+    font-size: 82px;
+    margin-left: 2rem;
+    position: relative;
 }
 
-.write {
-    width: 300px;
-    height: 55px;
-    margin-bottom: 30px;
-    padding: 0 15px;
-    background-color: var(--gold);
-    color: var(--ink);
-    border: 3px solid var(--ink);
-    border-radius: 15px;
-    font-family: "Figtree", sans-serif;
-    font-size: 16px;
+.img-center {
+    position: absolute;
+    margin-left: 600px;
+
+    width: 35rem;
+    height: 30rem;
 }
 
-.write::placeholder {
-    color: var(--ink);
-}
+.Watch {
 
-button {
-    width: 300px;
-    height: 55px;
-    margin-top: 30px;
-    background-color: var(--gold);
-    color: var(--ink);
-    border: 3px solid var(--ink);
-    border-radius: 15px;
-    font-family: "Figtree", sans-serif;
-    font-size: 20px;
-    cursor: pointer;
+    margin-left: 3rem;
+    background-color: var(--Blue);
+    font-size: 32px;
+    color: rgb(15, 13, 13);
+    margin-top: 64px;
+
+    width: 20rem;
+    height: 5rem;
+    border-radius: 4px;
+    border: 16px;
+
     transition: 1s ease;
 }
 
-button:hover {
+.Watch:hover {
+    font-size: 40px;
     transform: scale(1.1);
-    background-color: var(--ink);
-    color: var(--gold);
+    background-color: var(--Blue);
+}
+
+
+#filme {
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+
+
+.movie-card {
+    width: 250px;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin-left: 16px;
+    transition: 0.9s ease;
+}
+
+.movie-card:hover {
+    transform: scale(1.1);
+}
+
+.movie-img {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.movie-info {
+    padding: 12px;
+}
+
+.movie-title {
+    font-size: 16px;
+    margin: 0 0 6px 0;
+}
+
+.movie-year {
+    font-size: 12px;
+    color: #aaa;
+}
+
+.movie-genre {
+    font-size: 14px;
+    margin: 6px 0 0 0;
+    color: #ddd;
+}
+
+.cards_movies {
+
+    display: flex;
+}
+
+#serie {
+    margin-top: 128px;
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    margin-bottom: 32px;
 }
