@@ -165,3 +165,29 @@ h2 {
     font-size: 32px;
     margin-bottom: 32px;
 }
+
+#campotexto{
+    margin-left: 220px;
+    border: 2px solid  rgb(1, 90, 150);
+    border-radius: 5px;
+    transition: 0.5s ease;
+
+    background-color:  rgb(77, 164, 223);
+}
+#campotexto:hover{
+transform: scale(1.1);
+}
+
+#Search{
+    background-color: rgb(27, 160, 27);
+    border: none;
+    border-radius: 4px;
+    transition: 1s ease;
+    margin-left: 10px;
+
+    width: 80px;
+    height: 30px;
+}
+#Search:hover{
+    transform: scale(1.2);
+}
